@@ -12,10 +12,15 @@ Cucumber é uma ferramenta de software que suporta o desenvolvimento orientado p
 ## Versão do Cypress
 A versão do Cypress utilizada neste projeto é: **5.5.0**
 
+## Versão do Cypress
+
+A versão do Cypress utilizada neste projeto é: **5.5.0**
+
+---
+
 ## Estrutura do Projeto
 
-Este projeto segue o padrão **Page Object Model (POM)** para separar os elementos das páginas e as ações realizadas nelas. Abaixo, está a estrutura de pastas utilizada:
-
+Este projeto segue o padrão **Page Object Model (POM)** para separar os elementos das páginas e as ações realizadas nelas. Abaixo está a estrutura de pastas utilizada:
 
 - **e2e/features/**: Contém os arquivos `.feature`, escritos no formato Gherkin.
 - **e2e/step_definitions/**: Contém os arquivos `.js` que implementam os steps descritos nos arquivos `.feature`.
@@ -23,21 +28,16 @@ Este projeto segue o padrão **Page Object Model (POM)** para separar os element
 - **support/page_objects/**: Contém os arquivos que implementam as ações da página com base nos elementos.
 - **fixtures/**: Contém arquivos de dados estáticos, como JSON.
 
+---
+
 ## Configurando o Ambiente
 
-1. Instale o [Node.js](https://nodejs.org/en/)
+1. Instale o [Node.js](https://nodejs.org/).
 2. Clone o repositório do projeto.
 3. No terminal, execute os seguintes comandos para configurar o Cypress e as dependências:
 
+## Execucao do projeto
 ```bash
 npm install
 npm install cypress@5.5.0 --save-dev
-
-## Executando os Testes
-
-Após a configuração, para rodar os testes, siga os seguintes passos:
-
-1. Abra o Cypress com o comando:
-
-```bash
 npx cypress open

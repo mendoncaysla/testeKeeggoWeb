@@ -1,23 +1,14 @@
 name: Run tests
 
-# Disparadores automáticos e manuais
 on: 
   push:
-    branches: [master]
+    branches: [master] 
   workflow_dispatch:  
-
+  
 jobs:
   build:
 
     runs-on: ubuntu-latest
-
-    strategy:
-      fail-fast: false
-      max-parallel: 1
-      matrix:
-        node-version: [14.x]
-      strategy:
-        max_attempts: 3  
 
     steps:
     - uses: actions/checkout@v2
